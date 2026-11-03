@@ -1,5 +1,8 @@
 package org.example;
 
-public class SiloTrigo implements Silo{
-    public int alimentar(int quantidade){return quantidade*200;}
+public class SiloTrigo extends Silo {
+    @Override
+    protected int getGanhoPorUnidade() {
+        return 200;
+    }
 }
